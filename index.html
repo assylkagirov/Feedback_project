@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <h1>Feedback Form</h1>
+    
+
+
+
+    <div id="feedbackFormContainer">
+        <h2>Add Your Feedback</h2>
+        <form id="feedbackForm" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="image">Image (Max 1MB, JPG/GIF/PNG):</label>
+            <input type="file" id="image" name="image">
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="error-message" style="color: red;"></div>
+
+    </div>
+
+
+    <button onclick="sortFeedbacks('name')">Sort by Name</button>
+    <button onclick="sortFeedbacks('email')">Sort by Email</button>
+    <button onclick="sortFeedbacks('created_at')">Sort by Date Added</button>
+
+    
+    
+    <div id="feedbacksContainer"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

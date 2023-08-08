@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#feedbackFormContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+#feedbackForm {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+#feedbackForm label {
+    text-align: right;
+}
+
+#feedbackForm input[type="submit"] {
+    grid-column: 2;
+    margin-top: 10px;
+}
+
+#feedbacksContainer {
+    margin-top: 20px;
+}
+
+.feedback {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback img {
+    max-width: 200px;
+}
+
+.adminActions {
+    margin-top: 10px;
+}
+
+.adminActions button {
+    margin-right: 10px;
+}
